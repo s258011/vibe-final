@@ -1,7 +1,7 @@
 gunicorn
 eventlet
 tensorflow==2.3.1
-tensorflow-gpu==2.5.0
+tensorflow-gpu
 Flask==1.1.1
 Flask-Cors==3.0.8
 Flask-RESTful==0.3.7
