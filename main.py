@@ -5,7 +5,7 @@ import time
 from io import BytesIO, StringIO
 from typing import List
 from PIL import Image
-import keras
+from tensorflow import keras
 from flask import Flask, request, render_template
 from flask_cors import CORS
 from flask_restful import Resource, Api
