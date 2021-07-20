@@ -1,10 +1,6 @@
 gunicorn
 eventlet
-tensorboard-data-server==0.6.1
-tensorboard-plugin-wit==1.8.0
 tensorflow==2.3.1
-tensorboard==2.5.0
-tensorflow-estimator==2.5.0
 tensorflow-gpu==2.5.0
 Flask==1.1.1
 Flask-Cors==3.0.8
