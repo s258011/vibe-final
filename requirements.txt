@@ -1,7 +1,8 @@
 gunicorn
 eventlet
 tensorflow==2.5
-tensorflow-gpu
+tensorflow-cpu==2.4.0
+keras==2.4.0
 Flask==1.1.1
 Flask-Cors==3.0.8
 Flask-RESTful==0.3.7
@@ -13,9 +14,8 @@ numpy
 Pillow==7.0.0
 opencv-python-headless
 torch==1.9.0
-Keras==2.4.3
 Keras-Applications==1.0.8
-keras-nightly==2.5.0.dev2021032900
+keras-nightly
 Keras-Preprocessing==1.1.2
 keras-vis==0.4.1
 psutil

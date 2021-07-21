@@ -29,10 +29,10 @@ from flask_socketio import SocketIO, emit
 import tensorflow as tf
 import torch
 import cv2
-from keras.models import Sequential
-from keras.layers.core import Dense, Dropout, Flatten
-from keras.layers.convolutional import Conv2D
-from keras.layers.pooling import MaxPooling2D
+from tensorflow.keras.models import Sequential
+from tensorflow.keras.layers import Dense, Dropout, Flatten
+from tensorflow.keras.layers import Conv2D
+from tensorflow.keras.layers import MaxPooling2D
 import psutil
 tf.get_logger().setLevel('INFO')
 tf.autograph.set_verbosity(1)
@@ -562,7 +562,7 @@ if __name__ == '__main__':
     label_model = get_label_model()
     if Debug: print('Start Loading weight of models')
     label_model.load_weights('./models/label_model.h5')
-    Custom_CNN_Model = keras.models.load_model('./models/av_model.h5')
+    Custom_CNN_Model = tf.keras.models.load_model('./models/av_model.h5')
     emotion_dict = {0: "Angry", 1: "Disgusted", 2: "Fearful", 3: "Happy", 4: "Neutral", 5: "Sad", 6: "Surprised"}
     VGG16_Model = tf.keras.applications.VGG16(weights='imagenet', pooling='max', include_top=False)
     if Debug: print('End Loading weight of models')
