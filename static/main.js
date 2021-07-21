@@ -161,7 +161,7 @@ var url_param = findGetParameter('new_url');
 var recorde_flag = false;
 //    var socket = io('http://127.0.0.1:8080');
 //    var socket = io('http://vibe:80');
-    var socket = io();
+    var socket = io({transports: ['websocket'], upgrade: false});
 
 var tta = '';
 //var socket = io('https://vibe-ml-engine-o5tympfaqq-lz.a.run.app/:8080');
